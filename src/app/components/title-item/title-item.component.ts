@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Certification } from 'src/app/models/certification';
 
 @Component({
   selector: 'app-title-item',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title-item.component.scss']
 })
 export class TitleItemComponent implements OnInit {
+
+  @Input() data: Certification;
 
   constructor() { }
 

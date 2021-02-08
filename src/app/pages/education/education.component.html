@@ -1,1 +1,8 @@
-<p>education works!</p>
+<div>
+  <div>
+    <app-timeline [history]="educationHistory"></app-timeline>
+  </div>
+  <div *ngFor="let cert of certifications">
+    <app-title-item [data]="cert"></app-title-item>
+  </div>
+</div>

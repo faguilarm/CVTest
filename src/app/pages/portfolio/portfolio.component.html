@@ -1,1 +1,5 @@
-<p>portfolio works!</p>
+<div>
+  <div *ngFor="let briefcase of portfolioItems">
+    <app-portfolio-item [data]="briefcase"></app-portfolio-item>
+  </div>
+</div>
