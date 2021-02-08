@@ -1,0 +1,16 @@
+<div class="flex flex-col md:flex-row">
+  <div>
+    <app-profile></app-profile>
+  </div>
+  <div>
+    <nav class="nav-menu">
+      <ul class="flex">
+        <li><a routerLink="/education" routerLinkActive="active">Education</a></li>
+        <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
