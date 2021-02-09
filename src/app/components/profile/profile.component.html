@@ -1,13 +1,18 @@
 <div class="flex flex-col relative">
-  <img class="w-full h-auto absolute" src="assets/blob.png" />
+  <img class="w-full h-auto absolute" src="assets/blob.png" style="z-index: -1;" />
   <div class="w-full relative p-4 lg:p-8">
     <img class="w-full h-auto rounded-full p-4 z-10" src="assets/profile.png" />
   </div>
+
+  <button (click)="toggleLanguage()" class="toggle-language">
+    {{apiService.currentMessage | async | uppercase}}
+  </button>
+  
   <div class="w-full flex flex-col p-4 lg:p-8">
     <p class="full-name">{{data?.firstName + ' ' + data?.lastName}}</p>
-    <label class="heading">Acerca de mi</label>
-    <p class="regular p-4 md:p-8">{{data?.aboutMe?.en}}</p>
-    <label class="heading">Contacto</label>
+    <label class="heading">About Me</label>
+    <p class="regular p-4 md:p-8">{{data?.aboutMe}}</p>
+    <label class="heading">Contact</label>
 
     <div class="regular contact-list flex flex-col p-4 md:p-8">
       <div class="flex flex-row items-center flex-wrap">

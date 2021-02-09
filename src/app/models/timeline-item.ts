@@ -1,8 +1,8 @@
 export interface TimelineItem {
   id: number;
-  title: string;
+  title: string | {[langId: string]: string};
   subtitle: string;
-  description: string;
+  description: string | {[langId: string]: string};
   location: string;
   dateStart: string;
   dateEnd: string;
