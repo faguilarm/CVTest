@@ -1,6 +1,13 @@
-.nav-menu > ul {
-  @apply flex;
-  > li {
-    @apply p-4;
+.home-content {
+  background: #E5E5E5;
+  .nav-menu > ul {
+    @apply flex justify-between px-4;
+    > li {
+      @apply p-4;
+    }
+  }
+  .router-outlet {
+    @apply bg-white rounded ;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
   }
 }

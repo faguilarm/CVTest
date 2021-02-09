@@ -2,3 +2,45 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+
+.heading {
+  color: #8F7CFF;
+  @apply text-sm mb-2 text-center font-medium;
+  letter-spacing: 0.0015em;
+}
+
+.title {
+  @apply text-base mb-4 font-medium;
+}
+
+.title-2 {
+  @apply text-sm mb-4 font-medium;
+}
+
+.regular {
+  color: rgba(0, 0, 0, 0.87);
+  @apply text-xs mb-2 text-justify font-normal;
+}
+
+.light {
+  color: #828282;
+  @apply text-xs font-normal;
+}
+
+@screen md {
+  .heading {
+    @apply text-xl mb-4;
+  }
+  .title {
+    @apply text-2xl mb-8;
+  }
+  .title-2 {
+    @apply text-xl mb-4;
+  }
+  .regular {
+    @apply text-sm mb-4;
+  }
+  .light {
+    @apply text-base;
+  }
+}

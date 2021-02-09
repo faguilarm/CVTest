@@ -10,9 +10,9 @@ import { TimelineItem } from 'src/app/models/timeline-item';
 export class TimelineComponent implements OnInit {
 
   @Input() history: TimelineItem[];
+  @Input() type: "school" | "work";
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

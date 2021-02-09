@@ -1,6 +1,12 @@
 <div>
+  <div class="title">
+    Languages
+  </div>
   <div *ngFor="let language of languages">
     <app-progress-bar [data]="language"></app-progress-bar>
+  </div>
+  <div class="title mt-16">
+    Skills
   </div>
   <div *ngFor="let skill of skills">
     <app-progress-bar [data]="skill"></app-progress-bar>

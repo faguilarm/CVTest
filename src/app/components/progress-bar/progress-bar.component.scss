@@ -1,0 +1,8 @@
+.progress-bar {
+  @apply h-1 rounded-md;
+  background-color: #E0E0E0;
+  > div {
+    @apply h-1 rounded-md;
+    background-color: #8F7CFF;
+  }
+}

@@ -1,0 +1,18 @@
+.portfolio-item {
+  border: 1px solid #8F7CFF;
+  box-sizing: border-box;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px -1px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  @apply flex flex-col p-3;
+  .company-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.0015em;    
+  }
+  .date {
+    font-size: 12px;
+    line-height: 16px;
+    color: #8F7CFF;
+  }
+}

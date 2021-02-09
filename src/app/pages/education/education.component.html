@@ -1,6 +1,9 @@
 <div>
   <div>
-    <app-timeline [history]="educationHistory"></app-timeline>
+    <app-timeline [history]="educationHistory" type="school"></app-timeline>
+  </div>
+  <div class="title">
+    Degrees and Certifications
   </div>
   <div *ngFor="let cert of certifications">
     <app-title-item [data]="cert"></app-title-item>
