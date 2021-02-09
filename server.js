@@ -1,7 +1,10 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors')
 const jsonServer = require('json-server');
 const app = express();
+
+app.use(cors())
 
 app.use(express.static(__dirname + '/dist/cvtest-fam'));
 
