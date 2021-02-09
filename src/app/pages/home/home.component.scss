@@ -4,6 +4,9 @@
     @apply flex justify-between px-4;
     > li {
       @apply p-4;
+      .active {
+        border-bottom: 2px solid #FF0364;
+      }
     }
   }
   .router-outlet {

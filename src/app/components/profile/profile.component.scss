@@ -1,8 +1,18 @@
 .full-name {
-  @apply text-xl my-4 text-center font-bold;
+  @apply text-xl my-8 text-center font-bold;
 }
 
-@screen md {
+.contact-list {
+  svg {
+    @apply w-6 h-6;
+    color: #8F7CFF;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@screen lg {
   .full-name {
     @apply text-3xl;
   }

@@ -11,12 +11,15 @@
       <div class="bullet" *ngIf="i>0"></div>
     </div>
     <div class="col-span-11 lg:col-span-2 light justify-self-center">
-      {{item.dateStart | date:"yyyy"}}-{{item.dateEnd | date:"yyyy"}}
+      {{item.dateStart | date:"yyyy"}}-{{item.dateEnd? (item.dateEnd | date:"yyyy") : 'actual'}}
     </div>
     <div class="col-span-11 lg:col-span-9">
       <div class="title-2">
         {{item.title}}
         <span class="float-right leading-7 light ">{{item.location}}</span>
+      </div>
+      <div>
+        {{item.subtitle}}
       </div>
       <div class="regular">
         {{item.description}}
