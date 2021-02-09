@@ -24,7 +24,6 @@ export class ApiService {
 
   public toggleLanguage() {
     this.currentLanguage = this.currentLanguage === "en"? "es" : "en";
-    console.log("toggled to ", this.currentLanguage);
     this.messageSource.next(this.currentLanguage);
   }
 
